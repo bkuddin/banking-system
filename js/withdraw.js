@@ -7,6 +7,9 @@ document.getElementById('withdraw-button').addEventListener('click', function(){
     takeNewWithdrawFiledValue = parseFloat(takeNewWithdrawFiledValue);
     // console.log(takeNewWithdrawFiledValue)
 
+    // Clear input field after deposit button click
+    takeWithdrawFiled.value = '';
+
 
     // Step: 3
 
@@ -14,6 +17,12 @@ document.getElementById('withdraw-button').addEventListener('click', function(){
     let getPreviousWithdrawNumber = takePreviousWithdraw.innerText;
     getPreviousWithdrawNumber = parseFloat(getPreviousWithdrawNumber)
     // console.log(getPreviousWithdrawNumber)
+
+    // Step: 4
+
+    const currentWithdrawAmountTotal =  takeNewWithdrawFiledValue +  getPreviousWithdrawNumber;
+
+    takePreviousWithdraw.innerText = currentWithdrawAmountTotal;
    
     
 
