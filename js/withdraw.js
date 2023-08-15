@@ -31,7 +31,8 @@ document.getElementById('withdraw-button').addEventListener('click', function(){
      getPreviousTotalBalanceNumber = parseFloat(getPreviousTotalBalanceNumber);
 
      if(takeNewWithdrawFiledValue > getPreviousTotalBalanceNumber ){
-        alert('Please you have not enough money to withdraw')
+        alert('Please you have not enough money to withdraw');
+        return;
         
      }
     
