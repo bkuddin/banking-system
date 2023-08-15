@@ -23,7 +23,18 @@ document.getElementById('withdraw-button').addEventListener('click', function(){
     const currentWithdrawAmountTotal =  takeNewWithdrawFiledValue +  getPreviousWithdrawNumber;
 
     takePreviousWithdraw.innerText = currentWithdrawAmountTotal;
-   
+
+    // Step: 5
+
+    const takePreviousTotalBalance = document.getElementById('total-balance');
+     let getPreviousTotalBalanceNumber = takePreviousTotalBalance.innerText;
+     getPreviousTotalBalanceNumber = parseFloat(getPreviousTotalBalanceNumber);
+    
+    //  Step: 6 Calculate 
+
+    const currentWithdrawTotal = getPreviousTotalBalanceNumber - takeNewWithdrawFiledValue;
+    //  Step: 7 Set
+    takePreviousTotalBalance.innerText = currentWithdrawTotal;
     
 
 })
