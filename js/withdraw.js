@@ -3,9 +3,9 @@ document.getElementById('withdraw-button').addEventListener('click', function(){
 
     // Step-2
     const takeWithdrawFiled = document.getElementById('withdraw-field');
-    let takeWithdrawFiledValue = takeWithdrawFiled.value;
-    takeWithdrawFiledValue = parseFloat(takeWithdrawFiledValue);
-    // console.log(takeWithdrawFiledValue)
+    let takeNewWithdrawFiledValue = takeWithdrawFiled.value;
+    takeNewWithdrawFiledValue = parseFloat(takeNewWithdrawFiledValue);
+    // console.log(takeNewWithdrawFiledValue)
 
 
     // Step: 3
