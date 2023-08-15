@@ -10,6 +10,11 @@ document.getElementById('withdraw-button').addEventListener('click', function(){
     // Clear input field after deposit button click
     takeWithdrawFiled.value = '';
 
+    if(isNaN(takeNewWithdrawFiledValue)){
+        alert('Please put a number')
+        return;
+    }
+
 
     // Step: 3
 
@@ -18,11 +23,7 @@ document.getElementById('withdraw-button').addEventListener('click', function(){
     getPreviousWithdrawNumber = parseFloat(getPreviousWithdrawNumber)
     // console.log(getPreviousWithdrawNumber)
 
-    // Step: 4
 
-    const currentWithdrawAmountTotal =  takeNewWithdrawFiledValue +  getPreviousWithdrawNumber;
-
-    takePreviousWithdraw.innerText = currentWithdrawAmountTotal;
 
     // Step: 5
 
@@ -35,6 +36,12 @@ document.getElementById('withdraw-button').addEventListener('click', function(){
         return;
         
      }
+
+         // Step: 4
+
+    const currentWithdrawAmountTotal =  takeNewWithdrawFiledValue +  getPreviousWithdrawNumber;
+
+    takePreviousWithdraw.innerText = currentWithdrawAmountTotal;
     
     //  Step: 6 Calculate 
 

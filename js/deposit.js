@@ -7,6 +7,11 @@ document.getElementById('deposit-button').addEventListener('click', function(){
     // Clear input field after deposit button click
     takeDepositeInputField.value = '';
 
+    if(isNaN(depositeNewInputAmountValue)){
+        alert('Please put a number')
+        return;
+    }
+
 
     // Step-3: Take the deposit previous number that means the first time it is 00$
     const takePreviousDepositTotal = document.getElementById('deposit-total');
