@@ -17,10 +17,10 @@ document.getElementById('login-button').addEventListener('click', function(){
     // DO NOT Verify email password in this way on the client side. This is for basic learning.
 
     if(getEmailAddValue === 'bkuddin@io.com' && getPasswordValue === 'secret'){
-        console.log('Valid User')
+        location.href='bank.html'
     }
     else{
-        console.log('Invalid User')
+        alert('Please write your valid email id and password')
     }
 
     
