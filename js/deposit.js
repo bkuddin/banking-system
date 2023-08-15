@@ -21,6 +21,17 @@ document.getElementById('deposit-button').addEventListener('click', function(){
     
     takePreviousDepositTotal.innerText = currentDepositTotalNumber;
 
+
+     // Step-5: Same as above take the deposit previous total balance that means the first time it is 1540$
+
+     const takePreviousTotalBalance = document.getElementById('total-balance');
+     let getPreviousTotalBalanceNumber = takePreviousTotalBalance.innerText;
+     getPreviousTotalBalanceNumber = parseFloat(getPreviousTotalBalanceNumber);
+ 
+     const currentDepositTotalBalance = getPreviousTotalBalanceNumber + depositeNewInputAmountValue;
+ 
+     takePreviousTotalBalance.innerText = currentDepositTotalBalance;
+
    
 
 })
