@@ -17,7 +17,7 @@ document.getElementById('login-button').addEventListener('click', function(){
     // DO NOT Verify email password in this way on the client side. This is for basic learning.
 
     if(getEmailAddValue === 'bkuddin@io.com' && getPasswordValue === 'secret'){
-        location.href='bank.html'
+        window.location.href='bank.html'
     }
     else{
         alert('Please write your valid email id and password')
