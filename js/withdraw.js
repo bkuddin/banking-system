@@ -29,6 +29,11 @@ document.getElementById('withdraw-button').addEventListener('click', function(){
     const takePreviousTotalBalance = document.getElementById('total-balance');
      let getPreviousTotalBalanceNumber = takePreviousTotalBalance.innerText;
      getPreviousTotalBalanceNumber = parseFloat(getPreviousTotalBalanceNumber);
+
+     if(takeNewWithdrawFiledValue > getPreviousTotalBalanceNumber ){
+        alert('Please you have not enough money to withdraw')
+        
+     }
     
     //  Step: 6 Calculate 
 
